@@ -16,6 +16,9 @@
     "react-router-dom": "~6.2.1",
     "react-scripts": "~5.0.0"
   },
+  "devDependencies": {
+    "estate-tools": "latest"
+  },
   "scripts": {
     "build": "react-scripts build",
     "start": "react-scripts start",

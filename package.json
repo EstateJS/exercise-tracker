@@ -2,8 +2,8 @@
   "name": "exercise-tracker",
   "version": "0.1.0",
   "private": true,
-  "author": "Warpdrive Technologies, Inc.",
-  "license": "Apache-2.0",
+  "author": "Stackless Web Services, Inc.",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/estatejs/estate/examples/exercise-tracker"

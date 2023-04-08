@@ -1,43 +1,31 @@
 {
   "name": "exercise-tracker",
-  "version": "0.1.0",
   "private": true,
-  "author": "Stackless Web Services, Inc.",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/estatejs/estate/examples/exercise-tracker"
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run connect-exercise-tracker && tsc && vite build --debug",
+    "preview": "vite preview",
+    "connect-exercise-tracker": "estate client connect . exercise-tracker --ci"
   },
   "dependencies": {
-    "bootstrap": "~4.3.1",
-    "react": "~17.0.2",
-    "react-datepicker": "~4.5.0",
-    "react-dom": "~17.0.2",
-    "react-router-dom": "~6.2.1",
-    "react-scripts": "~5.0.0"
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3",
+    "estate-js": "latest",
+    "exercise-tracker-service": "file:./.estate/generated-clients/exercise-tracker",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.10.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0",
+    "react-select": "^5.7.2"
   },
   "devDependencies": {
-    "estate-tools": "latest"
-  },
-  "scripts": {
-    "build": "react-scripts build",
-    "start": "react-scripts start",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "@types/react": "^18.0.28",
+    "@types/react-datepicker": "^4.10.0",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0"
   }
 }

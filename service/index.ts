@@ -3,7 +3,9 @@ import { deleteObject,saveData,getData,sendMessage,
 
 export class Exercise extends Data {
     constructor(public user: User, public description: string, public duration: number, public date: Date) {
-        super(createUuid(false));
+        const id = createUuid(false);
+        console.log(`Exercise id= ${id}`);
+        super(id);
     }
 }
 
@@ -19,13 +21,20 @@ export class User extends Data {
     }
 }
 
+/**
+ * A worker whose job is to keep track of all the users and exercises and provide access to both.
+ */
 export class ExerciseTrackerWorker extends Worker {
+    // @ts-ignore
     private _userIndex: Set<string>;
+    // @ts-ignore
     private _exerciseIndex: Set<string>;
 
     constructor(primaryKey: string) {
         super(primaryKey);
+        // @ts-ignore
         this._userIndex = new Set();
+        // @ts-ignore
         this._exerciseIndex = new Set();
     }
 

@@ -5,15 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run connect-exercise-tracker && tsc && vite build --debug",
-    "preview": "vite preview",
-    "connect-exercise-tracker": "estate client connect . exercise-tracker --ci"
+    "build": "tsc && vite build --debug",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.7",
     "bootstrap": "^5.2.3",
     "estate-js": "latest",
-    "exercise-tracker-service": "file:./.estate/generated-clients/exercise-tracker",
+    "estate-react": "latest",
     "react": "^18.2.0",
     "react-datepicker": "^4.10.0",
     "react-dom": "^18.2.0",

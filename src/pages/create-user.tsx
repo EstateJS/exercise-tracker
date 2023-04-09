@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {ExerciseTrackerWorker} from 'exercise-tracker-service';
-import {useEstateClient} from "estate-js/react";
+import {useEstateClient} from "estate-react";
 import {Navigate} from "react-router-dom";
 
 export default function CreateUser() {

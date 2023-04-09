@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker';
 import {useParams} from "react-router-dom"
 import "react-datepicker/dist/react-datepicker.css";
 import {Exercise, ExerciseTrackerWorker, User} from 'exercise-tracker-service';
-import {useEstateClient} from "estate-js/react";
+import {useEstateClient} from "estate-react";
 import {Navigate} from 'react-router-dom';
 import {SelectedUser, UserSelect} from "../components/user-select";
 

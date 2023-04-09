@@ -2,8 +2,8 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 
 import {DataUpdatedEvent} from 'estate-js';
+import {useEstateClient} from "estate-react";
 import {Exercise, ExerciseAdded, ExerciseTrackerWorker} from 'exercise-tracker-service';
-import {useEstateClient} from "estate-js/react";
 
 interface ExerciseItemProps {
     exercise: Exercise,

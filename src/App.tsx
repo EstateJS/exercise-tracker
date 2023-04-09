@@ -1,4 +1,4 @@
-import React, {createContext, useContext} from 'react';
+import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
@@ -7,15 +7,12 @@ import {ExercisesList} from "./pages/exercises-list";
 import {EditExercise} from "./pages/edit-exercise";
 import CreateExercise from "./pages/create-exercise";
 import CreateUser from "./pages/create-user";
-import {EstateProvider} from 'estate-js/esm/public/react';
-import {ServiceOptions} from "estate-js";
+
+import {EstateProvider} from 'estate-react';
 import {createEstateClient} from "exercise-tracker-service";
 
-const options = new ServiceOptions();
-options.enableMessageTracing = true;
-options.enableVerboseLogging = true;
-
-const estateClient = createEstateClient(options);
+// Create your estate client at the app-level, so it retains its state whilst the user is on the site.
+const estateClient = createEstateClient();
 
 function App() {
     return (

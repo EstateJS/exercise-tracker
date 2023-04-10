@@ -29,8 +29,6 @@
     "estate-tools": "latest"
   },
   "stackblitz": {
-    // StackBlitz specific configuration
-    // Unneccesary outside of the StackBlitz sandbox
     "installDependencies": true,
     "startCommand" : false,
     "env": {

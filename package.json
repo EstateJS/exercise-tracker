@@ -30,7 +30,7 @@
   },
   "stackblitz": {
     "installDependencies": true,
-    "startCommand" : false,
+    "startCommand": false,
     "env": {
       "NODE_ENV": "Production"
     }

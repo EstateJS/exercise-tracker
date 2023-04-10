@@ -1,0 +1,28 @@
+{
+    "identity": "eyJjaGVja3N1bSI6MTg0NDQ1MDgwMSwic2VydmljZUlkIjoiNTAwMDAyNiIsInNlcnZpY2VWZXJzaW9uIjoiMSIsImlkZW50aXR5Q2xhc3NNYXBwaW5ncyI6W3siY2xhc3NOYW1lIjoiRXhlcmNpc2UiLCJjbGFzc0lkIjoxLCJ0YWciOiI1Y2ZjOTg3Mzg4MjM0MTAzOTc3YzRjOWU5OTdkZTMwZiJ9LHsiY2xhc3NOYW1lIjoiRXhlcmNpc2VBZGRlZCIsImNsYXNzSWQiOjIsInRhZyI6IjM1MzY0OTI5OTc5YTQ1NzQ5MTc2ZmYyZWFhZGU5MjZjIn0seyJjbGFzc05hbWUiOiJVc2VyIiwiY2xhc3NJZCI6MywidGFnIjoiMzNjOTVjZTYwYWY2NDg4ODlkZDE2YTcxNGQzYzRiZDEifSx7ImNsYXNzTmFtZSI6IkV4ZXJjaXNlVHJhY2tlcldvcmtlciIsImNsYXNzSWQiOjQsInRhZyI6ImZhMzU3MDQ2YTA1YTRjY2ZiZjhlMjM4MTQ1OWNiZGM3In1dLCJsYXN0Q2xhc3NJZCI6NH0=",
+    "name": "exercise-tracker",
+    "configVersion": 1,
+    "classes": [
+        {
+            "name": "Exercise",
+            "tag": "5cfc987388234103977c4c9e997de30f"
+        },
+        {
+            "name": "ExerciseAdded",
+            "tag": "35364929979a45749176ff2eaade926c"
+        },
+        {
+            "name": "User",
+            "tag": "33c95ce60af648889dd16a714d3c4bd1"
+        },
+        {
+            "name": "ExerciseTrackerWorker",
+            "tag": "fa357046a05a4ccfbf8e2381459cbdc7"
+        }
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "allowJs": true,
+        "strict": true
+    }
+}

@@ -7,14 +7,14 @@ Estate is a fully open-source* TypeScript transactional key-value database and n
 
 Estate is extremely simple to learn, yet lightning fast: most backend requests complete in under _200μs._ (Not including network round-trip)
 
-Estate is fully open-source, self-hostable and provides a free-to-use cloud cluster.
+Estate is self-hostable and provides a free-to-use cloud cluster.
 
 *The framework (Tools SDK, Client runtime) is MIT licensed and the platform (rusty/modern C++ cloud-native Kuberneters cluster) is Apache-2 licensed.
 
 ## Quick Walkthrough: Exercise Track Demo Application
 This demo is an example full-stack SaaS app that allows users to track the exercises they do in a shared real-time list. The backend runs in Google Cloud (us-central) and the front-end client (React+Vite) is running in this StackBlitz sandbox.
 
-The backend code for this demo is uncomplicated, yet staggeringly powerful. See for yourself: Check out `service/index.ts`. It's 115 lines of regular TS with zero annotations or unfamiliar keywords.
+The backend code for this demo is uncomplicated, yet staggeringly powerful. See for yourself: Check out `service\index.ts`. It's 115 lines of regular TS with zero annotations or unfamiliar keywords.
 
 ## Setup (2 minutes ⏱️)
 
@@ -28,9 +28,8 @@ This opens a new browser tab. Click "Continue as Guest" to login anonymously.
 ```
 cd service
 $ estate init .
-``` 
-When prompted for a name, enter `exercise-tracker`.
-This makes the service code directory a Service that can be deployed and connected to by clients/front-ends using the name `exercise-tracker`.
+```
+This makes the service code directory a Service that can be deployed and connected to by clients/front-ends.
 
 3. Deploy the backend service:
 ```
@@ -59,7 +58,7 @@ $ npm run dev
 2. On any window, click "Add user" and add a user (any name will do).
 3. It will ask you to create a new exercise. Fill in the fields and hit "Create Exercise Log"
    3. (Key takeaway: _Messages are SSE_) See how the new exercise was created on all the other windows?
-   3. The backend worker sends the message at `service/index.ts` line 85. 
+   3. The backend worker sends the message at `service/index.ts` line 85.
    3. The front-end client handles the message at `src/pages/exercises-list.tsx` line 71.
 4. Close all the windows and then press `q` in the terminal to stop `npm run dev`
 5. Re-run `npm run dev`
@@ -86,15 +85,15 @@ Estate is written in TypeScript and (Rust-like) modern C++ and is built like a r
 With Estate you write and deploy backends called Services that contain TypeScript classes that extend three fundamental types. Which type you choose, depends on what you want to use it for.
 
 1. Worker = API-less, stateful Micro-services
-    * Workers can be thought of as Internet-addressable/callable TypeScript objects that can be shared among any number of front-ends/clients.
-    * Workers are great for managing Data with business logic.
+   * Workers can be thought of as Internet-addressable/callable TypeScript objects that can be shared among any number of front-ends/clients.
+   * Workers are great for managing Data with business logic.
 
 2. Data = Business domain data, what you'd normally store in a database.
-    * Data objects can be thought of as a table or a spreadsheet, with each TypeScript property coinciding with a column.
-    * You can pass Data objects to Workers just like any other TypeScript object. Data objects are transparently versioned and strongly consistent.
+   * Data objects can be thought of as a table or a spreadsheet, with each TypeScript property coinciding with a column.
+   * You can pass Data objects to Workers just like any other TypeScript object. Data objects are transparently versioned and strongly consistent.
 
 3. Message = When you want to send stuff from the backend to the front-end.
-    * Real-time Messages can be thought of as a TypeScript object you can send from inside a Worker to any number of front-ends/clients.
+   * Real-time Messages can be thought of as a TypeScript object you can send from inside a Worker to any number of front-ends/clients.
 
 ## Feature Rundown
 - Fast, stateful App Service Workers for writing data-driven business logic

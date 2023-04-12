@@ -26,7 +26,7 @@ This opens a new browser tab. Click "Continue as Guest" to login anonymously.
 
 2. Initialize the backend service code directory:
 ```
-cd service
+$ cd service
 $ estate init .
 ```
 Enter `exercise-tracker` when it asks for a name.

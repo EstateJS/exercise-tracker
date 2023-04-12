@@ -34,7 +34,7 @@ devDependencies:
   '@types/react-datepicker': 4.10.0_biqbaboplfbrettd7655fr4n2y
   '@types/react-dom': 18.0.11
   '@vitejs/plugin-react': 3.1.0_vite@4.2.1
-  estate-tools: 1.0.0-alpha.1
+  estate-tools: 1.0.0-alpha.3
   typescript: 4.9.5
   vite: 4.2.1
 
@@ -1563,8 +1563,8 @@ packages:
       react: 16.14.0
     dev: false
 
-  /estate-tools/1.0.0-alpha.1:
-    resolution: {integrity: sha512-J3q99h9KS1294Zx5fsM9oqEMtesaUgPVuhqcwgPo5stpd9YSYNRdRBpgbKCdHlP08i57vNI//Cp+ZV3pwh3B6Q==}
+  /estate-tools/1.0.0-alpha.3:
+    resolution: {integrity: sha512-LbBc9AhGmNLIoLiLlx5yBXuQjDcVkeg2KuBRxkYkzkIZclKC3MoyjRVpcjmZ8eHUWKd68zTVJQOdrvSjkLvvXw==}
     hasBin: true
     dependencies:
       '@firebase/app': 0.9.7

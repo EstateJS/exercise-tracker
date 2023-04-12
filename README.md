@@ -43,7 +43,7 @@ Each time you make changes to your service backend code, you'll need to rerun th
 $ cd ..
 $ estate connect . exercise-tracker
 ```
-Select "pnpm" when asked to update node_modules. It will only ask you to do this the first time you make a service connection.
+Select "pnpm" (press enter) when asked to update node_modules. It will only ask you to do this the first time you make a service connection.
 This command must be rerun each time the backend service is deployed.
 
 6. Start Exercise Tracker demo
@@ -52,23 +52,25 @@ $ npm run dev
 ```
 
 ## Tour the Demo / Key takeaways (8 minutes ⏱️)
-1. Open the Exercise Tracker browser tab two or three times.
-   1. Click "Open in new Tab" in the top-right.
-   1. Right-click the new Tab and click "Duplicate" once or twice.
-   1. Detach the tabs and arrange the windows, so you can see all of them at the same time.
+1. Open the Exercise Tracker browser tab two or three times. 
+   * Click "Open in new Tab" in the top-right. 
+   * Right-click the new Tab and click "Duplicate" once or twice.
+   * Detach the tabs and arrange the windows, so you can see all of them at the same time.
 2. On any window, click "Add user" and add a user (any name will do).
 3. It will ask you to create a new exercise. Fill in the fields and hit "Create Exercise Log"
-   3. (Key takeaway: _Messages are SSE_) See how the new exercise was created on all the other windows?
-   3. The backend worker sends the message at `service/index.ts` line 85.
-   3. The front-end client handles the message at `src/pages/exercises-list.tsx` line 71.
+   * **(Key takeaway: _Messages are SSE_)** See how the new exercise was created on all the other windows?
+   * The backend worker sends the message at `service/index.ts` line 85.
+   * The front-end client handles the message at `src/pages/exercises-list.tsx` line 71.
 4. Close all the windows and then press `q` in the terminal to stop `npm run dev`
-5. Re-run `npm run dev`
-   5. (Key takeaway: _Stateful Backend, Zero JSON_) See how the exercises still exist? They're not stored in the browser (see for yourself, check Local Storage, etc.)
-   5. A new `Exercise` data instance is created client-side and then passed to the worker at `src/pages/create-exercise.tsx` line 47.
-   5. In the service backend, the `Exercise` instance is passed to the `addExercise` method at `service/index.ts` line 76.
-   5. The `Exercise` data instance is saved at `service/index.ts` line 83.
-6. From the list of exercises, edit an exercise and delete an exercise.
-   6. (Key takeaway: _Data is Observable/Reactive_) See how the change shows up in the other windows?
+5. Re-run `npm run dev` to restart the client
+6. Click what looks like an electric plug on the left navbar
+7. Click Port 5173 to re-open a new Exercise Tracker tab
+   * **(Key takeaway: _Stateful Backend, Zero JSON_)** See how the exercises still exist? They're not stored in the browser (see for yourself, check Local Storage, etc.)
+   * A new `Exercise` data instance is created client-side and then passed to the worker at `src/pages/create-exercise.tsx` line 47.
+   * In the service backend, the `Exercise` instance is passed to the `addExercise` method at `service/index.ts` line 76.
+   * The `Exercise` data instance is saved at `service/index.ts` line 83.
+8. From the list of exercises, edit an exercise and delete an exercise.
+   * **(Key takeaway: _Data is Observable/Reactive_)** See how the change shows up in the other windows?
 
 # Our Friendly Community
 

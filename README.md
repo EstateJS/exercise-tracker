@@ -11,7 +11,7 @@ Estate is self-hostable and provides a free-to-use cloud cluster.
 
 *The framework (Tools SDK, Client runtime) is MIT licensed and the platform (rusty/modern C++ cloud-native Kuberneters cluster) is Apache-2 licensed.
 
-## Quick Walkthrough: Exercise Track Demo Application
+## Quick Walkthrough: Exercise Tracker Demo App
 This demo is an example full-stack SaaS app that allows users to track the exercises they do in a shared real-time list. The backend runs in Google Cloud (us-central) and the front-end client (React+Vite) is running in this StackBlitz sandbox.
 
 The backend code for this demo is uncomplicated, yet staggeringly powerful. See for yourself: Check out `service\index.ts`. It's 115 lines of regular TS with zero annotations or unfamiliar keywords.

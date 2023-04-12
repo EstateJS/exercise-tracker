@@ -38,7 +38,7 @@ $ estate deploy .
 ```
 Each time you make changes to your service backend code, you'll need to rerun this command.
 
-4. (Re-)Generate code to connect to the service in the NPM project:
+4. Generate code to connect to the service in the front-end/client NPM project:
 ```
 $ cd ..
 $ estate connect . exercise-tracker

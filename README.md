@@ -29,6 +29,7 @@ This opens a new browser tab. Click "Continue as Guest" to login anonymously.
 cd service
 $ estate init .
 ```
+Enter `exercise-tracker` when it asks for a name.
 This makes the service code directory a Service that can be deployed and connected to by clients/front-ends.
 
 3. Deploy the backend service:

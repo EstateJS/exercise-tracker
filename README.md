@@ -1,27 +1,20 @@
 # EstateJS
 
 ## Introduction
-In a world where bespoke backend software is easily generated, Estate is here to let you write backends more efficiently,
-and faster than it may take you to prompt GPT to write it for you using traditional backend tooling.
+In a world where bespoke backend software is easily generated, Estate is here to let you write backends more efficiently, and faster than it may take you to prompt GPT to write it for you using traditional backend tooling.
 
-Estate is a fully open-source* TypeScript transactional key-value database and no-api virtual-actor AppServer that 
-might be all you need to write powerful, data-driven, real-time SaaS backends and efficient Line-of-Business app 
-backends for the enterprise.
+Estate is a fully open-source* TypeScript transactional key-value database and no-api virtual-actor AppServer that might be all you need to write powerful, data-driven, real-time SaaS backends and efficient Line-of-Business app backends for the enterprise.
 
-Estate is extremely simple to learn, yet lightning fast: most backend requests complete in under _200μs._
-(Not including network round-trip)
+Estate is extremely simple to learn, yet lightning fast: most backend requests complete in under _200μs._ (Not including network round-trip)
 
 Estate is fully open-source, self-hostable and provides a free-to-use cloud cluster.
 
-*The framework is MIT licensed and the platform is Apache-2 licensed.
+*The framework (Tools SDK, Client runtime) is MIT licensed and the platform (rusty/modern C++ cloud-native Kuberneters cluster) is Apache-2 licensed.
 
 ## Quick Walkthrough: Exercise Track Demo Application
-This demo is an example full-stack SaaS app that allows users to track the exercises they do in a shared real-time list.
-The backend runs in Google Cloud (us-central) and the front-end client (React+Vite) is running in this StackBlitz sandbox.
+This demo is an example full-stack SaaS app that allows users to track the exercises they do in a shared real-time list. The backend runs in Google Cloud (us-central) and the front-end client (React+Vite) is running in this StackBlitz sandbox.
 
-The backend code for this demo is uncomplicated, yet staggeringly powerful. 
-See for yourself: Check out `service\index.ts`. It's 115 lines of regular TS with zero annotations or 
-unfamiliar keywords.
+The backend code for this demo is uncomplicated, yet staggeringly powerful. See for yourself: Check out `service\index.ts`. It's 115 lines of regular TS with zero annotations or unfamiliar keywords.
 
 ## Setup (2 minutes ⏱️)
 
@@ -69,8 +62,7 @@ $ npm run dev
    3. The front-end client handles the message at `src/pages/exercises-list.tsx` line 71.
 4. Close all the windows and then press `q` in the terminal to stop `npm run dev`
 5. Re-run `npm run dev`
-   5. (Key takeaway: _Stateful Backend, Zero JSON_) See how the exercises still exist? They're not stored in the browser (see for 
-   yourself, check Local Storage, etc.)
+   5. (Key takeaway: _Stateful Backend, Zero JSON_) See how the exercises still exist? They're not stored in the browser (see for yourself, check Local Storage, etc.)
    5. A new `Exercise` data instance is created client-side and then passed to the worker at `src/pages/create-exercise.tsx` line 47.
    5. In the service backend, the `Exercise` instance is passed to the `addExercise` method at `service/index.ts` line 76.
    5. The `Exercise` data instance is saved at `service/index.ts` line 83.
@@ -90,8 +82,7 @@ We're active on Discord! https://discord.gg/ahHffbBkNQ
 Estate is written in TypeScript and (Rust-like) modern C++ and is built like a real-time trading platform: event-drive, fully asynchronous. The front-end/client framework is written in TypeScript. The platform ("System") is a 6-workload Kubernetes deployment.
 
 ## Mental Model
-With Estate you write and deploy backends called Services that contain TypeScript classes that
-extend three fundamental types. Which type you choose, depends on what you want to use it for.
+With Estate you write and deploy backends called Services that contain TypeScript classes that extend three fundamental types. Which type you choose, depends on what you want to use it for.
 
 1. Worker = API-less, stateful Micro-services
     * Workers can be thought of as Internet-addressable/callable TypeScript objects that can be shared among any number of front-ends/clients.

@@ -14,7 +14,7 @@ Estate is fully open-source, self-hostable and provides a free-to-use cloud clus
 ## Quick Walkthrough: Exercise Track Demo Application
 This demo is an example full-stack SaaS app that allows users to track the exercises they do in a shared real-time list. The backend runs in Google Cloud (us-central) and the front-end client (React+Vite) is running in this StackBlitz sandbox.
 
-The backend code for this demo is uncomplicated, yet staggeringly powerful. See for yourself: Check out `service\index.ts`. It's 115 lines of regular TS with zero annotations or unfamiliar keywords.
+The backend code for this demo is uncomplicated, yet staggeringly powerful. See for yourself: Check out `service/index.ts`. It's 115 lines of regular TS with zero annotations or unfamiliar keywords.
 
 ## Setup (2 minutes ⏱️)
 
@@ -28,8 +28,9 @@ This opens a new browser tab. Click "Continue as Guest" to login anonymously.
 ```
 cd service
 $ estate init .
-```
-This makes the service code directory a Service that can be deployed and connected to by clients/front-ends.
+``` 
+When prompted for a name, enter `exercise-tracker`.
+This makes the service code directory a Service that can be deployed and connected to by clients/front-ends using the name `exercise-tracker`.
 
 3. Deploy the backend service:
 ```

@@ -2,9 +2,9 @@
 
 ## Introduction 🌄
 
-In a world where bespoke backend software is easily generated, Estate is here to help you build backends at a higher abstraction, and faster than it would take you to prompt GPT to write it for you using traditional backend tooling.
+Traditional serverless functions like AWS Lambda do not natively maintain state between requests, but Estate serverless functions do natively maintain state between requests.
 
-Estate is an open-source TypeScript object database with an embedded AppServer that may be all you need to write powerful real-time SaaS backends and efficient Line-of-Business app backends.
+And furthermore, instead of having to create an HTTP/REST API on the backend that the frontend then integrates with, Estate automagically handles all of it for you. From the developer's perspective, everything is just TypeScript objects/functions shared by both the front and backend, and Estate magically does the frontend/backend integration for you.
 
 Estate is lightning fast: most backend requests complete in under _200μs_ (Not including network round-trip).
 

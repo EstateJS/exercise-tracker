@@ -100,7 +100,9 @@ export function EditExercise() {
                 <div className="form-group">
                     <label>Duration (in minutes): </label>
                     <input
-                        type="text"
+                        type="number"
+                        required
+                        min={1}
                         className="form-control"
                         value={duration}
                         onChange={(e: any) => setDuration(e.target.value)}
@@ -110,6 +112,7 @@ export function EditExercise() {
                     <label>Date: </label>
                     <div>
                         <DatePicker
+                            required
                             selected={date}
                             onChange={(e: any) => setDate(e.target.value)}
                         />

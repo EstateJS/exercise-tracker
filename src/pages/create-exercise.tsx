@@ -77,7 +77,9 @@ export default function CreateExercise() {
                 <div className="form-group">
                     <label>Duration (in minutes): </label>
                     <input
-                        type="text"
+                        type="number"
+                        required
+                        min={1}
                         className="form-control"
                         value={duration ?? ""}
                         onChange={(e:any) => setDuration(Number(e.target.value))}
@@ -87,6 +89,7 @@ export default function CreateExercise() {
                     <label>Date: </label>
                     <div>
                         <DatePicker
+                            required
                             selected={date}
                             onChange={(d) => setDate(d!)}
                         />

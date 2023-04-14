@@ -102,6 +102,7 @@ export function EditExercise() {
                     <input
                         type="number"
                         required
+                        min={1}
                         className="form-control"
                         value={duration}
                         onChange={(e: any) => setDuration(e.target.value)}

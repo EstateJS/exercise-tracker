@@ -90,11 +90,11 @@ $ npm run dev
    - In the backend code, the username argument is passed to the worker method at `service/index.ts`:
 ```
 49)  addUser(username: string): User {
-     ...
+         ...
 53)      const user = new User(username);
 54)      saveData(user);
-     ...
- }
+         ...
+     }
 ```
    - At line 53, a new instance of the User Data object is instanciated, passing the username to the constructor.
    - The following line saves the new user to the database.

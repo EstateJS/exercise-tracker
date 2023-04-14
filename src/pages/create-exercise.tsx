@@ -77,6 +77,7 @@ export default function CreateExercise() {
                 <div className="form-group">
                     <label>Duration (in minutes): </label>
                     <input
+                        type="number"
                         type="text"
                         className="form-control"
                         value={duration ?? ""}

@@ -15,8 +15,11 @@ This demo is an example full-stack SaaS app that allows users to track the exerc
 ## Key Takeaways
 
 🤏 Curiously Concise Code, where's the boilerplate?
+
 🍃 Strongly typed data persistence, end-to-end TypeScript shared type system.
+
 ⚡️ Easy-mode real-time server-to-client messaging, update all clients in real-time!
+
 👁‍🗨 Data is remotely observable, adding reactive views!
 
 ## Setup (2 minutes ⏱️)
@@ -69,7 +72,6 @@ This command must be rerun each time the backend service is deployed.
 ```
 $ npm run dev
 ```
-  --- Old --
 
 ## Guided Tour (8 minutes ⏱️)
 

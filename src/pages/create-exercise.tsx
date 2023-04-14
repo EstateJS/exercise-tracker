@@ -89,6 +89,7 @@ export default function CreateExercise() {
                     <label>Date: </label>
                     <div>
                         <DatePicker
+                            required
                             selected={date}
                             onChange={(d) => setDate(d!)}
                         />

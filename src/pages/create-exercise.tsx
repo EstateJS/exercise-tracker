@@ -78,7 +78,7 @@ export default function CreateExercise() {
                     <label>Duration (in minutes): </label>
                     <input
                         type="number"
-                        type="text"
+                        required
                         className="form-control"
                         value={duration ?? ""}
                         onChange={(e:any) => setDuration(Number(e.target.value))}

@@ -9,7 +9,7 @@ dependencies:
     version: 5.2.3(@popperjs/core@2.11.7)
   estate-js:
     specifier: latest
-    version: 1.0.0-alpha.2
+    version: 1.0.0-alpha.3
   estate-react:
     specifier: latest
     version: 1.0.0-alpha.1
@@ -44,7 +44,7 @@ devDependencies:
     version: 3.1.0(vite@4.2.1)
   estate-tools:
     specifier: latest
-    version: 1.0.0-alpha.4
+    version: 1.0.0-alpha.5
   typescript:
     specifier: ^4.9.3
     version: 4.9.5
@@ -1561,8 +1561,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /estate-js@1.0.0-alpha.2:
-    resolution: {integrity: sha512-2F0EXm7xbbZoxX5G47nlNsFkVrxoHBSaSYyCvFUntwO1GJcx8qgm/Iw3IC0l28kVTbzalKzLXACstm9nLWN/Dg==}
+  /estate-js@1.0.0-alpha.3:
+    resolution: {integrity: sha512-5ZXzOz6xfcJE6RKFX45DdBus05rdPAZpLypN0oYd25i7EcbArwTRSCbPa93XxRmm+JePywc3i7wkKF5yV+3QTw==}
     dependencies:
       flatbuffers: 2.0.4
       lodash: 4.17.21
@@ -1577,8 +1577,8 @@ packages:
       react: 16.14.0
     dev: false
 
-  /estate-tools@1.0.0-alpha.4:
-    resolution: {integrity: sha512-JkuSIXoXbaUEivaI2dvD+Kzj4L2JzylfGsaXkqPRE/MIxtrZhmTnPGrKt7i/A5gFbnr78RgoLtT7hohMulnpPQ==}
+  /estate-tools@1.0.0-alpha.5:
+    resolution: {integrity: sha512-GwSGnX7+mIYV743TjKsweaDPhWwPQuO7i6/vpqNCNsKZNSeP7wT3+VOY6K4lcgngirDJJPxn96XUM+Ve+D56SA==}
     hasBin: true
     dependencies:
       '@firebase/app': 0.9.7

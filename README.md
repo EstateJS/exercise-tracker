@@ -25,6 +25,10 @@ This demo is an example full-stack SaaS app that allows users to track the exerc
 5. Start the front-end
    `$ npm run dev`
 
+## Documentation
+
+The docs and a tutorial are located at https://estatejs.com
+
 ## Community
 
 Please check out our GitHub https://github.com/EstateJS/estate

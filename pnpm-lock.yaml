@@ -13,9 +13,6 @@ dependencies:
   estate-react:
     specifier: latest
     version: 1.0.0-alpha.1
-  exercise-tracker-service:
-    specifier: file:./.estate/generated-clients/exercise-tracker
-    version: file:.estate/generated-clients/exercise-tracker
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -2577,9 +2574,3 @@ packages:
       y18n: 5.0.8
       yargs-parser: 20.2.9
     dev: true
-
-  file:.estate/generated-clients/exercise-tracker:
-    resolution: {directory: .estate/generated-clients/exercise-tracker, type: directory}
-    name: exercise-tracker-service
-    version: 1.0.0
-    dev: false

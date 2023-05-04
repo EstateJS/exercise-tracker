@@ -20,7 +20,7 @@ This demo is an example full-stack SaaS app that allows users to track the exerc
 4. Code-gen the front-end to the backend
    `$ estate connect . exercise-tracker`
 
-(Select pnpm when asked)
+(Select *pnpm* when asked)
 
 5. Start the front-end
    `$ npm run dev`

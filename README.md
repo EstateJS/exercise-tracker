@@ -12,10 +12,10 @@ This demo is an example full-stack SaaS app that allows users to track the exerc
 (Login as Guest)
 
 2. Init the backend code folder
-   `$ estate init service/`
+   `$ estate init service/ --name exercise-tracker`
 
 3. Deploy the service to the backend platform
-   `$ estate deploy service/ --name exercise-tracker`
+   `$ estate deploy service/`
 
 4. Code-gen the front-end to the backend
    `$ estate connect . exercise-tracker`
